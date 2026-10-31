@@ -1,0 +1,10 @@
+# Core computer vision and hand tracking
+numpy>=1.23.0
+opencv-python>=4.8.0
+mediapipe>=0.10.14
+
+# Mouse control and optional voice commands
+pyautogui>=0.9.54
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+PyAudio>=0.2.14
