@@ -1,0 +1,8 @@
+# Air-Canvas OS is a Python desktop app (webcam + OS mouse control) and cannot
+# run on Netlify. Netlify serves only the static landing page in /site.
+# Using /site as the base directory keeps Netlify from pip-installing the
+# desktop-only requirements.txt (pyaudio, pyautogui, opencv) at the repo root.
+[build]
+  base = "site"
+  publish = "."
+  command = "echo 'Static site, no build step'"
